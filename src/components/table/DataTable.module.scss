@@ -1,0 +1,41 @@
+.wrap {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  thead th {
+    text-align: left;
+    padding: 12px 14px;
+    font-size: 12px;
+    opacity: 0.75;
+    background: rgba(15, 23, 42, 0.03);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  }
+
+  tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  }
+
+  tbody tr:hover {
+    background: rgba(15, 23, 42, 0.02);
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+.empty {
+  text-align: center;
+  padding: 22px 14px;
+  opacity: 0.7;
+}

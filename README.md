@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dashboard SaaS (Next.js + TypeScript + SCSS Modules)
 
-## Getting Started
+Mini dashboard estilo SaaS (portafolio) con:
+- Overview (KPIs + chart)
+- Users (tabla con paginación + búsqueda + detalle)
+- Billing (planes + invoices mock)
+- UI responsive (sidebar móvil)
+- 404 SaaS para rutas inválidas
+- Skeleton loaders (loading states)
 
-First, run the development server:
+## Stack
+- Next.js (App Router)
+- TypeScript
+- SCSS Modules
+- Recharts (charts)
+- DummyJSON (API pública para datos mock)
 
+## Features
+### Overview
+- KPIs: Total users, products, orders, revenue estimado (suma de carts.total)
+- Chart: tendencia de revenue por orden (DummyJSON carts)
+
+### Users
+- Tabla de usuarios con:
+  - paginación real (limit/skip)
+  - búsqueda (q)
+  - detalle por usuario (/dashboard/users/[id])
+- Loading states con `loading.tsx`
+
+### Billing
+- Plan cards con toggle mensual/anual
+- Invoices table (mock)
+
+### UX / UI
+- Sidebar con link activo
+- Responsive: sidebar colapsable en móvil con overlay
+- 404 custom en user detail route
+
+## API endpoints (DummyJSON)
+- Users: https://dummyjson.com/users?limit=10&skip=0
+- Users search: https://dummyjson.com/users/search?q=john&limit=10&skip=0
+- User detail: https://dummyjson.com/users/1
+- Products total: https://dummyjson.com/products?limit=1
+- Carts: https://dummyjson.com/carts?limit=100
+
+## Screenshots
+
+### Overview
+![Overview](./public/screenshots/overview.png)
+
+### Users
+![Users](./public/screenshots/users.png)
+
+### User detail
+![User detail](./public/screenshots/user-detail.png)
+
+### Billing
+![Billing](./public/screenshots/billing.png)
+
+
+## Getting started
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

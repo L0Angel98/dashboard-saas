@@ -1,0 +1,70 @@
+.wrap {
+  display: grid;
+  place-items: center;
+  padding: 40px 0;
+}
+
+.card {
+  width: min(680px, 100%);
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  text-align: center;
+}
+
+.code {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  opacity: 0.9;
+}
+
+.title {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnGhost {
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 800;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.btnPrimary {
+  background: rgba(15, 23, 42, 0.06);
+  color: inherit;
+
+  &:hover {
+    background: rgba(15, 23, 42, 0.09);
+  }
+}
+
+.btnGhost {
+  background: #fff;
+  color: inherit;
+
+  &:hover {
+    background: rgba(15, 23, 42, 0.03);
+  }
+}
