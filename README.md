@@ -46,16 +46,16 @@ Mini dashboard estilo SaaS (portafolio) con:
 ## Screenshots
 
 ### Overview
-![Overview](./public/screenshots/overview.png)
+![Overview](./public/screenshots/overview.jpg)
 
 ### Users
-![Users](./public/screenshots/users.png)
+![Users](./public/screenshots/users.jpg)
 
 ### User detail
-![User detail](./public/screenshots/user-detail.png)
+![User detail](./public/screenshots/user-detail.jpg)
 
 ### Billing
-![Billing](./public/screenshots/billing.png)
+![Billing](./public/screenshots/billing.jpg)
 
 
 ## Getting started
