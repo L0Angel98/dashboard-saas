@@ -43,6 +43,7 @@ export default function UserNotes({ userId }: { userId: number }) {
             padding: "10px 12px",
             cursor: "pointer",
             fontWeight: 800,
+            color: "#0b0b0b",
           }}
         >
           Clear
@@ -58,6 +59,7 @@ export default function UserNotes({ userId }: { userId: number }) {
             padding: "10px 12px",
             cursor: "pointer",
             fontWeight: 800,
+            color: "#0b0b0b",
           }}
         >
           Save

@@ -29,7 +29,7 @@ export default function InvoicesTable() {
         <div>
           <div className={styles.title}>Invoices</div>
           <div className={styles.subtitle}>
-            Tabla mock para que se vea como SaaS real.
+            Tabla mock simulando SaaS real.
           </div>
         </div>
         <button className={styles.btn} type="button">

@@ -34,7 +34,7 @@ export default function SimpleChart({ data }: { data: Point[] }) {
             <XAxis dataKey="name" hide />
             <YAxis tickFormatter={(v) => `$${Math.round(v / 1000)}k`} />
             <Tooltip
-              formatter={(value: number | undefined, name: string) => [
+              formatter={(value: number | undefined, name: string | undefined) => [
                 name === "revenue"
                   ? `$${(value ?? 0).toLocaleString("es-MX")}`
                   : value,

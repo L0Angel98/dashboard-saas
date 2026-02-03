@@ -71,7 +71,7 @@ export default function Plans() {
         <div>
           <div className={styles.title}>Plans</div>
           <div className={styles.subtitle}>
-            Esto es mock, pero se ve como producto real.
+            Esto es mock, simulación de producto real.
           </div>
         </div>
 
