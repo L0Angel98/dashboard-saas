@@ -173,6 +173,17 @@
 /* ======================
    Responsive (mobile)
    ====================== */
+
+@media (max-width: 453) {
+  .topbar {
+    flex-wrap: wrap;
+    .actions {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .shell {
     grid-template-columns: 1fr;
@@ -182,6 +193,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    color: #0f0f0f;
   }
 
   .search {

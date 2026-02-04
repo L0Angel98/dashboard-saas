@@ -20,7 +20,7 @@ export default async function DashboardPage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
+            gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
             gap: 14,
           }}
         >
@@ -47,7 +47,12 @@ export default async function DashboardPage() {
         </div>
 
         <div
-          style={{ display: "grid", gridTemplateColumns: "1.6fr 1fr", gap: 14 }}
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.6fr 1fr",
+            gap: 14,
+          }}
+          className="responsiveGrid"
         >
           <SimpleChart data={series} />
 
@@ -58,6 +63,7 @@ export default async function DashboardPage() {
               borderRadius: 16,
               padding: 16,
               boxShadow: "0 10px 24px rgba(15, 23, 42, 0.06)",
+              maxWidth: 280,
             }}
           >
             <div style={{ fontWeight: 800, marginBottom: 8 }}>Quick notes</div>
