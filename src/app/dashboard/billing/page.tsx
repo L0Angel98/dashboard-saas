@@ -5,7 +5,7 @@ import InvoicesTable from "@/components/billing/InvoicesTable";
 export default function BillingPage() {
   return (
     <DashboardLayout title="Billing">
-      <div style={{ display: "flex", gap: 14 }}>
+      <div style={{ display: "flex", gap: 14, flexDirection: "column" }}>
         <Plans />
         <InvoicesTable />
       </div>
